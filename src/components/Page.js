@@ -1,7 +1,9 @@
 import React from "react";
 import { chakra, Box, useColorModeValue, Icon, Image } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
-export default function Page(){
+export default function Page() {
+    const navigate = useNavigate();
   const bg = useColorModeValue("white", "gray.800");
   return (
     <Box pos="relative" overflow="hidden" bg={bg} mt={0}>
@@ -53,14 +55,14 @@ export default function Page(){
                 _dark={{ color: "white" }}
               >
                 <chakra.span display={{ base: "block", xl: "inline" }}>
-                Empowering Your Security, {" "}
+                  Empowering Women in STEM:,{" "}
                 </chakra.span>
                 <chakra.span
                   display={{ base: "block", xl: "inline" }}
                   color="brand.600"
                   _dark={{ color: "brand.400" }}
                 >
-                  One Flight at a Time.
+                  Bridging the Gender Gap and Breaking Barriers.
                 </chakra.span>
               </chakra.h1>
               <chakra.p
@@ -70,7 +72,17 @@ export default function Page(){
                 mx={{ sm: "auto", lg: 0 }}
                 color="gray.500"
               >
-                STAMP is a cutting-edge drone services company that specializes in surveillance, security, and locating individuals. Our user-friendly UI offers a range of features, including arming and setting up your drone, making it simple and efficient to manage your security needs.
+                Welcome to our groundbreaking initiative aimed at empowering
+                women in male-dominated fields, particularly in STEM (Science,
+                Technology, Engineering, and Mathematics). Our mission is to
+                provide women with the resources, support, and opportunities
+                they need to excel and thrive in these traditionally
+                male-dominated industries. Through mentorship programs,
+                networking events, skill-building workshops, and advocacy
+                efforts, we're committed to breaking down barriers and fostering
+                a more inclusive and diverse STEM community. Join us in shaping
+                the future of STEM and empowering women to reach their full
+                potential!
               </chakra.p>
               <Box
                 mt={{ base: 5, sm: 8 }}
@@ -89,39 +101,20 @@ export default function Page(){
                     fontSize={{ base: "md", md: "lg" }}
                     rounded="md"
                     color="black"
-                    letterSpacing={ '3px' }
+                    letterSpacing={"3px"}
                     bg="brand.600"
-                    _hover={{ color: '#0e76fd', }}
+                    _hover={{ color: "#0e76fd" }}
                     px={{ base: 8, md: 10 }}
                     py={{ base: 3, md: 4 }}
                     cursor="pointer"
-                    href="http://127.0.0.1:8550/"
+                    onClick={() => navigate('sign-up')}
                     target="_blank"
                   >
                     Get started
                   </chakra.a>
                 </Box>
                 <Box mt={[3, 0]} ml={[null, 3]}>
-                  <chakra.a
-                    w="full"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    px={{ base: 8, md: 10 }}
-                    letterSpacing={ '3px' }
-                    py={{ base: 3, md: 4 }}
-                    border="solid 1px transparent"
-                    fontSize={{ base: "md", md: "lg" }}
-                    rounded="md"
-                    color="brand.700"
-                    bg="brand.100"
-                    _hover={{ bg: "brand.200" }}
-                    cursor="pointer"
-                    href="/Settings/Propellers"
-                    target="_blank"
-                  >
-                    Live demo
-                  </chakra.a>
+                 
                 </Box>
               </Box>
             </Box>
@@ -140,11 +133,11 @@ export default function Page(){
           h="84%"
           w="full"
           fit="cover"
-          src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzyejIjZHYF1opvmoVi0em6R3HgfPYPSrzg&usqp=CAU'
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzyejIjZHYF1opvmoVi0em6R3HgfPYPSrzg&usqp=CAU"
           alt=""
           loading="lazy"
         />
       </Box>
     </Box>
   );
-};
+}
