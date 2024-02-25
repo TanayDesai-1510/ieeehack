@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Women's Right Buildathon",
+        "link": "https://womens-rights-buildathon.devpost.com/?ref_feature=challenge&ref_medium=discover"
+    },
+    {
+        "id": 2,
+        "name": "Women In STEM Hackathon",
+        "link": "https://tsb-women-in-stem-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover"
+    },
+    {
+        "id": 3,
+        "name": "WEHack 2024",
+        "link": "https://wehack-2024.devpost.com/?ref_feature=challenge&ref_medium=discover"
+    },
+    {
+        "id": 4,
+        "name": "WEHack 2024",
+        "link": "https://wehack-2024.devpost.com/?ref_feature=challenge&ref_medium=discover"
+    },
+    {
+        "id": 5,
+        "name": "UWB Hacks AI",
+        "link": "https://uwb-hacks-ai.devpost.com/?ref_feature=challenge&ref_medium=discover"
+    },
+    {
+        "id": 6,
+        "name": "Pearl Hacks 2024",
+        "link": "https://pearlhacks2024.devpost.com/?ref_feature=challenge&ref_medium=discover"
+    }
+]

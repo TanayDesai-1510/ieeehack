@@ -11,6 +11,7 @@ import SignUp from './components/SignUp';
 import Login from './components/Login';
 import JobSearch from './components/JobSearch';
 import Dashboard from './components/Dashboard';
+import Hackathons from './components/Hackathons';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/login' element={<Login/>} />
           <Route path='/job' element={<JobSearch/>} />
           <Route path='/dashboard' element={<Dashboard/>} />
+          <Route path='/hackathons' element={<Hackathons/>} />
         </Routes>
       </Router>
     </ChakraProvider>

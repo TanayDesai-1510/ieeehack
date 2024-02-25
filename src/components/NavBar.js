@@ -12,7 +12,7 @@ export default function Navbar() {
     <Flex justifyContent="space-between" alignItems="center" p={4} bg="teal.500" color="white">
       <Box>
         <Link to="/" style={{ textDecoration: 'none' }}>
-            <Text fontSize="lg" fontWeight="bold" _hover={{ textDecoration: 'none' }}>Hackers</Text>
+            <Text fontSize="lg" fontWeight="bold" _hover={{ textDecoration: 'none' }}>oneStopForHER</Text>
         </Link>
       </Box>
       <Box display={{ base: "none", md: "block" }}>
@@ -20,6 +20,7 @@ export default function Navbar() {
           <Link to="/home" >Home</Link>
           { context.isLoggedIn && <Link to="/dashboard" >Dashboard</Link> }
           { context.isLoggedIn && <Link to="/job" >Job Searches</Link> }
+          { context.isLoggedIn && <Link to="/hackathons" >Hackathons</Link>}
           { !context.isLoggedIn && <Link to="/about" >About</Link> }
           
           {/* <Text to="/contact" >Contact</Text> */}
@@ -45,6 +46,7 @@ export default function Navbar() {
               <Link to="/home" onClick={onClose}>Home</Link>
               { context.isLoggedIn && <Link to="/dashboard" onClick={onClose}>Dashboard</Link> }
               { context.isLoggedIn && <Link to="/job" onClick={onClose}>Job Searches</Link> }
+              { context.isLoggedIn && <Link to="/hackathons" >Hackathons</Link>}
               { !context.isLoggedIn && <Link to="/about" onClick={onClose}>About</Link> }
               
               {/* <Text to="/contact" onClick={onClose}>Contact</Text> */}
