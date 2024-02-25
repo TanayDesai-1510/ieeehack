@@ -133,7 +133,7 @@ export default function Page() {
           h="84%"
           w="full"
           fit="cover"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzyejIjZHYF1opvmoVi0em6R3HgfPYPSrzg&usqp=CAU"
+          src="/final.png"
           alt=""
           loading="lazy"
         />
